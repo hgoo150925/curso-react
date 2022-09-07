@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const HelloWorldApp = () => {
-  return <div>HelloWorldApp</div>;
+  return <div>Hello World App</div>;
 };
