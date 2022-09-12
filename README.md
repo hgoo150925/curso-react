@@ -6,6 +6,6 @@
 
 ## JSX in React
 
-- [JSX in React](https://www.freecodecamp.org/news/jsx-in-react-introduction/)
+### JSX = JS + XML
 
-JSX = JS + XML
+- [JSX in React](https://www.freecodecamp.org/news/jsx-in-react-introduction/)
