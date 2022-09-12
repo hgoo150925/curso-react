@@ -4,6 +4,8 @@
 
 <img src="https://pbs.twimg.com/card_img/1565492559891283976/3hDZnC-B?format=png&name=medium"/>
 
-## Intro React
+## JSX in React
 
-<img src="../../public/01-intro-react/01-que-es-react.png">
+- [JSX in React](https://www.freecodecamp.org/news/jsx-in-react-introduction/)
+
+JSX = JS + XML
