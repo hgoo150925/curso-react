@@ -6,4 +6,4 @@
 
 ## Intro React
 
-<img src="./public/01-intro-react/01-que-es-react.png">
+<img src="../curso-react/public/01-intro-react/01-que-es-react.png">
