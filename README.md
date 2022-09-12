@@ -11,3 +11,5 @@
 ### Recursos
 
 - [Roadmap React](https://roadmap.sh/react)
+
+- [Awesome React](https://github.com/enaqx/awesome-react)
