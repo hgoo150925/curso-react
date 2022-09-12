@@ -4,8 +4,6 @@
 
 <img src="https://pbs.twimg.com/card_img/1565492559891283976/3hDZnC-B?format=png&name=medium"/>
 
-## JSX in React
-
-### JSX = JS + XML
+## JSX in React | JSX = JS + XML
 
 - [JSX in React](https://www.freecodecamp.org/news/jsx-in-react-introduction/)
