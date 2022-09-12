@@ -8,7 +8,7 @@
 
 - [JSX in React](https://www.freecodecamp.org/news/jsx-in-react-introduction/)
 
-### Recursos
+## Recursos
 
 - [Roadmap React](https://roadmap.sh/react)
 
