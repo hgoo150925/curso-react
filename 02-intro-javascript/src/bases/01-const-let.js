@@ -1,5 +1,3 @@
-console.log('from argentina');
-
 // https://www.freecodecamp.org/espanol/news/var-let-y-const-cual-es-la-diferencia/
 // ya no utilizamos var en javascript
 // utilizamos let y const
