@@ -19,6 +19,8 @@ import { getActorsById } from './08-imp-exp';
 // Resolve cuando la promesa es Ok
 // Reject cuando la promesa es KO
 
+// Una promesa es un Objeto
+
 const promesa = new Promise((resolve, reject) => {
   setTimeout(() => {
     // Cuando esta tarea termine llamamos al resolve y ejecutamos el then
