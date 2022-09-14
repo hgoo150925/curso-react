@@ -1,4 +1,4 @@
-console.log('from argentina');
+// https://es.javascript.info/destructuring-assignment
 
 // Las dos estructuras de datos más usadas en JavaScript son Object y Array.
 
@@ -29,6 +29,7 @@ const user = {
   name: 'Ryan',
   lastname: 'Gosling',
   city: 'Buenos Aires',
+  country: '',
 };
 
 const { name, lastname, city } = user;
