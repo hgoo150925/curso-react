@@ -1,4 +1,4 @@
-console.log('from argentina');
+// https://es.javascript.info/function-basics
 
 function saludar(name) {
   return `Hola, ${name}`;
