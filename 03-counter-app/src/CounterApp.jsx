@@ -1,7 +1,8 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export const CounterApp = ({ value }) => {
+  // hooks son funciones
   // https://beta.reactjs.org/apis/react/useState
 
   // https://midu.dev/react-hooks-introduccion-saca-todo-el-potencial-sin-class/
@@ -10,6 +11,9 @@ export const CounterApp = ({ value }) => {
   // y devuelve un array de dos posiciones:
   // la primera (valor), tiene el valor del estado
   // la segunda (setValor), el método para actualizar el estado
+
+  // esto es una desestructuracion de useState
+  // cuando hay un cambio en el estado se vuele a disparar el functional component
   const [counter, setCounter] = useState(value);
 
   // https://bobbyhadz.com/blog/react-too-many-re-renders-react-limits-the-number
