@@ -1,4 +1,7 @@
-export const FirstApp = () => {
+// https://beta.reactjs.org/learn/passing-props-to-a-component
+// las props pasan datos del componente padre al hijo
+
+export const FirstApp = ({ title }) => {
   // Esta variable es parte del componente
   // React no reprocesa (renderizar nuevamente) todo lo que se encuentre fuera de este componente
   // React renderiza todo lo que se encuentre dentro de este componente
@@ -11,6 +14,7 @@ export const FirstApp = () => {
 
   return (
     <>
+      <h1>{title}</h1>
       {/* dentro de las llaves pueden ir expresiones de JS que no sean objetos */}
       <h2>{newMessage}</h2>
       <h3>{newObj.name}</h3>
