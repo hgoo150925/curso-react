@@ -8,7 +8,7 @@ import './styles.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* FirstApp es el componente padre 
-      title es la prop que se envia al componente hijo
+      title es la prop que se envia del componente padre al componente hijo
     */}
 
     <FirstApp title="oka" />
