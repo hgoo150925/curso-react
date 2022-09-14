@@ -29,6 +29,8 @@ const user = {
   name: 'Ryan',
   lastname: 'Gosling',
   city: 'Buenos Aires',
+  country: '',
+  latlng: {},
 };
 
 const { name, lastname, city } = user;
@@ -39,3 +41,24 @@ const getData = ({ city, country = 'Argentina' }) => {
   return `He's lives in ${city} ${country}`;
 };
 console.log(getData(user));
+
+const useContext = ({ name, country = 'Portugal' }) => {
+  return {
+    nombreClave: name,
+    lugar: country,
+    latlng: {
+      lat: 13.4567,
+      lng: 25.4531,
+    },
+  };
+};
+const avenger = useContext(user);
+console.log(avenger);
+
+const {
+  nombreClave,
+  country,
+  latlng: { lat, lng },
+} = useContext(user);
+console.log(nombreClave, country);
+console.log(lat, lng);
