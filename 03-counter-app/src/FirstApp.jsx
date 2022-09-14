@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 // las props pasan datos del componente padre al hijo
 
 // podemos desestructurar las props de esta forma -> { title }
-export const FirstApp = ({ title }) => {
+export const FirstApp = ({ title, subtitle = '' }) => {
   // Esta variable es parte del componente
   // React no reprocesa (renderizar nuevamente) todo lo que se encuentre fuera de este componente
   // React renderiza todo lo que se encuentre dentro de este componente
@@ -18,6 +18,7 @@ export const FirstApp = ({ title }) => {
   return (
     <>
       <h1>{title}</h1>
+      <h2>{subtitle}</h2>
       {/* dentro de las llaves pueden ir expresiones de JS que no sean objetos */}
       <h2>{newMessage}</h2>
       <h3>{newObj.name}</h3>
@@ -31,4 +32,10 @@ export const FirstApp = ({ title }) => {
 FirstApp.propTypes = {
   // la prop title es string y es requerido
   title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+};
+
+FirstApp.defaultProps = {
+  title: 'No hay titulo',
+  subtitle: 'No hay subtitulo',
 };
