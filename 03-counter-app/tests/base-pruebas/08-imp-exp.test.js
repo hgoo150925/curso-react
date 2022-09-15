@@ -36,7 +36,6 @@ describe('Prueba en 08-imp-exp', () => {
   test('getHeroesByOwner debe de regresar heroes de Marvel', () => {
     const owner = 'Marvel';
     const heroes = getHeroesByOwner(owner);
-    afd;
 
     expect(heroes.length).toBe(2);
     expect(heroes).toEqual(heroes.filter(heroe => heroe.owner === owner));
