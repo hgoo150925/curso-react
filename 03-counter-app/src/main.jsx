@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       title es la prop que se envia del componente padre al componente hijo
     */}
 
-    <FirstApp title="oka" />
+    <FirstApp title="oka" subtitle="Soy un subtitulo" />
     {/* <CounterApp value={5} /> */}
   </React.StrictMode>
 );
