@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import { CounterApp } from './CounterApp';
+import { CounterApp } from './CounterApp';
 
-import { FirstApp } from './FirstApp';
+// import { FirstApp } from './FirstApp';
 // import { HelloWorldApp } from './HelloWorldApp';
 import './styles.css';
 
@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       title es la prop que se envia del componente padre al componente hijo
     */}
 
-    <FirstApp title="oka" subtitle="Soy un subtitulo" />
-    {/* <CounterApp value={5} /> */}
+    {/* <FirstApp title="oka" subtitle="Soy un subtitulo" /> */}
+    <CounterApp value={5} />
   </React.StrictMode>
 );
