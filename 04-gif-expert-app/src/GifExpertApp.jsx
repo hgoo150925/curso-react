@@ -10,19 +10,21 @@ export const GifExpertApp = () => {
   // y devuelve un array de dos posiciones:
   // la primera (valor), tiene el valor del estado
   // la segunda (setValor), el método para actualizar el estado
-  const [categories, setCategories] = useState(['Cats', 'Dogs']);
+  const [categories, setCategories] = useState([]);
 
-  const onAddCategory = () => {
+  const onAddCategory = newCategory => {
     // No usar push para agregar un valor al array porque muta el state
-    setCategories([...categories, 'Shifu']);
+    setCategories([...categories, newCategory]);
   };
 
   return (
     <>
       <h1>Gif Expert App</h1>
 
-      {/* podemos pasar funciones a una props, en ese caso pasamos la funcion setCategories */}
-      <AddCategory setCategories={setCategories} />
+      <AddCategory
+        // setCategories={setCategories}
+        newCategory={value => onAddCategory(value)}
+      />
 
       <ul>
         {categories.map((category, index) => {

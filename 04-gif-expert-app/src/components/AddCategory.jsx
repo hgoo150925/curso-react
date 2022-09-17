@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 // https://beta.reactjs.org/learn/passing-props-to-a-component
 // las props pasan datos del componente padre al hijo
-export const AddCategory = ({ setCategories }) => {
+export const AddCategory = ({ newCategory }) => {
   const [inputValue, setInputValue] = useState('Shifu');
 
   const onInputChange = event => {
@@ -14,8 +14,8 @@ export const AddCategory = ({ setCategories }) => {
     if (inputValue.trim().length <= 1) {
       return;
     }
-
-    setCategories(categories => [inputValue, ...categories]);
+    newCategory(inputValue.trim());
+    // setCategories(categories => [inputValue, ...categories]);
     setInputValue('');
   };
 
