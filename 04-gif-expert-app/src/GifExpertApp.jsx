@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { AddCategory } from './components/AddCategory';
+import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
   // Cuando desee almacenar data y esa data debe ser renderizado entonces usare hooks de React para el estado
@@ -25,16 +26,11 @@ export const GifExpertApp = () => {
     <>
       <h1>Gif Expert App</h1>
 
-      <AddCategory
-        // setCategories={setCategories}
-        newCategory={value => onAddCategory(value)}
-      />
+      <AddCategory newCategory={value => onAddCategory(value)} />
 
-      <ul>
-        {categories.map(category => {
-          return <li key={category}>{category}</li>;
-        })}
-      </ul>
+      {categories.map(category => {
+        return <GifGrid key={category} category={category} />;
+      })}
     </>
   );
 };
