@@ -13,6 +13,10 @@ export const GifExpertApp = () => {
   const [categories, setCategories] = useState([]);
 
   const onAddCategory = newCategory => {
+    // validar que no se repita el nuevo valor que ingresa a categories
+    if (categories.includes(newCategory)) {
+      return;
+    }
     // No usar push para agregar un valor al array porque muta el state
     setCategories([...categories, newCategory]);
   };
@@ -27,8 +31,8 @@ export const GifExpertApp = () => {
       />
 
       <ul>
-        {categories.map((category, index) => {
-          return <li key={index}>{category}</li>;
+        {categories.map(category => {
+          return <li key={category}>{category}</li>;
         })}
       </ul>
     </>
