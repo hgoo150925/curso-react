@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { AddCategory } from './components/AddCategory';
+
 export const GifExpertApp = () => {
   // Cuando desee almacenar data y esa data debe ser renderizado entonces usare hooks de React para el estado
   // https://midu.dev/react-hooks-introduccion-saca-todo-el-potencial-sin-class/
@@ -19,12 +21,14 @@ export const GifExpertApp = () => {
     <>
       <h1>Gif Expert App</h1>
 
+      {/* podemos pasar funciones a una props, en ese caso pasamos la funcion setCategories */}
+      <AddCategory setCategories={setCategories} />
+
       <ul>
         {categories.map((category, index) => {
           return <li key={index}>{category}</li>;
         })}
       </ul>
-      <button onClick={onAddCategory}>Add +1</button>
     </>
   );
 };
