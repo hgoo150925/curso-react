@@ -17,7 +17,7 @@ export const FirstApp = ({ title, subtitle }) => {
 
   return (
     <>
-      <div data-testid="test-title">{title}</div>
+      <h1 data-testid="test-title">{title}</h1>
       <h2>{subtitle}</h2>
       {/* dentro de las llaves pueden ir expresiones de JS que no sean objetos */}
       <h2>{newMessage}</h2>
