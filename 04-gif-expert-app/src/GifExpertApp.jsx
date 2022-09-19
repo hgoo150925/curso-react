@@ -1,10 +1,9 @@
 import { useState } from 'react';
 
-import { AddCategory } from './components/AddCategory';
-import { GifGrid } from './components/GifGrid';
+import { AddCategory, GifGrid } from './components';
 
 export const GifExpertApp = () => {
-  const [categories, setCategories] = useState(['Kung Fu Panda']);
+  const [categories, setCategories] = useState(['Oogway']);
 
   const onAddCategory = newCategory => {
     // validar que no se repita el nuevo valor que ingresa a categories
@@ -12,7 +11,7 @@ export const GifExpertApp = () => {
       return;
     }
     // No usar push para agregar un valor al array porque muta el state
-    setCategories([...categories, newCategory]);
+    setCategories([newCategory, ...categories]);
   };
 
   return (
