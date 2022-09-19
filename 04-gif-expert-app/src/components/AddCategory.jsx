@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 // https://beta.reactjs.org/learn/passing-props-to-a-component
 // las props pasan datos del componente padre al hijo
@@ -19,7 +20,7 @@ export const AddCategory = ({ newCategory }) => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} aria-label="form">
       <input
         type="text"
         placeholder="Buscar gifs"
@@ -28,4 +29,8 @@ export const AddCategory = ({ newCategory }) => {
       />
     </form>
   );
+};
+
+AddCategory.propTypes = {
+  onNewCategory: PropTypes.func.isRequired,
 };
